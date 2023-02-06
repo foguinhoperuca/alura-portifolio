@@ -1,0 +1,10 @@
+body {
+	background-color: #1A0000;
+	color: #FCFFE7;
+	font-family: "Open Sans", "Century Gothic", Tahoma, Serif;
+	/* font-size: 15px; */
+}
+
+a, strong {
+	color: #89C4E1;
+}
