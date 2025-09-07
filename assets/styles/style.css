@@ -1,10 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 5;
+    padding: 5;
+}
+
 body {
-	background-color: #1A0000;
-	color: #FCFFE7;
-	font-family: "Open Sans", "Century Gothic", Tahoma, Serif;
-	/* font-size: 15px; */
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;	                                /*#1A0000*/
+    color: #F6F6F6;				                            /*#FCFFE7*/
+    font-family: "Open Sans", "Century Gothic", Tahoma, Serif;
+    font-size: 15px;
 }
 
 a, strong {
-	color: #89C4E1;
+    color: #89C4E1; /* #F54927 */
+}
+
+p {
+    font-weight: bold;
+
+    /* margin: 10px; */
+    /* border: 2px solid #F5B027; */
+    /* padding: 5px; */
+}
+
+span {
+    color: #22D4FD;
+    border: 1px solid #22D4FD;
+    padding: 10px;
+}
+
+.presentation {
+	margin: 5%;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.presentation__content {
+	width: 615px;
+}
+
+.presentation_content_title {
+	font-size: 48px;
+}
+
+.presentation_content_paragraph {
+	font-size: 24px;
+}
+
+.presentation_links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
