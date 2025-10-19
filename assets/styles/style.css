@@ -38,6 +38,11 @@ body {
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 }
+.presentation__content_paragraph__emphasis {
+	font-size: 28px;
+	font-weight: 800;
+	color: #F54927;
+}
 
 .presentation__links {
 	display: flex;
@@ -55,6 +60,9 @@ body {
 
 .presentation__links__link {
 	/* background-color: #22D4FD; */
+	display: flex;
+	justify-content: center;
+	gap: 16px;
 	width: 378px; /* was 280px */
 	text-align: center;
 	border-radius: 8px; /* was 16 */
@@ -67,6 +75,11 @@ body {
 	border: 2px solid #22D4FD;
 }
 
+.presentation__links__link:hover {
+	background-color: #272727;
+	color: #F54927;
+	padding: 4%;
+}
 
 /* Tests/dev purpose */
 a, strong {
@@ -77,4 +90,9 @@ p {
     margin: 5px;
 	padding: 5px;
     /* border: 1px solid #89C4E1; */
+}
+
+.main-image {
+	height: 532px;
+	width: 468px;
 }
