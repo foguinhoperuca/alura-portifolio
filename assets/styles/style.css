@@ -41,21 +41,30 @@ body {
 
 .presentation__links {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+}
+
+.presentation__links__subtitle {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
 }
 
 .presentation__links__link {
-	background-color: #22D4FD;
-	width: 280px;
+	/* background-color: #22D4FD; */
+	width: 378px; /* was 280px */
 	text-align: center;
-	border-radius: 16px;
+	border-radius: 8px; /* was 16 */
 	font-size: 24px;
 	font-weight: 600;
 	padding: 21.5px 0;
 	text-decoration: none;
-	color: #000000;
+	color: #F6F6F6; /* was #000000 */
 	font-family: 'Montserrat', sans-serrif;
+	border: 2px solid #22D4FD;
 }
 
 

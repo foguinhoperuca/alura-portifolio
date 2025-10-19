@@ -1,0 +1,9 @@
+[submodule "course03"]
+	path = course03
+	url = git@github.com:alura-cursos/Portifolio-HTML-e-CSS-Curso3.git
+[submodule "course01"]
+	path = course01
+	url = git@github.com:alura-cursos/Portifolio-HTML-e-CSS.git
+[submodule "course02"]
+	path = course02
+	url = git@github.com:alura-cursos/Portifolio-HTML-e-CSS-Curso2.git
