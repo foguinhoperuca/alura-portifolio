@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 * {
-    margin: 5;
-    padding: 5;
+    margin: 0;					/*5*/
+    padding: 0;					/*5*/
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: #000000;	                                /*#1A0000*/
     color: #F6F6F6;				                            /*#FCFFE7*/
@@ -14,8 +14,46 @@ body {
     font-size: 15px;
 }
 
+.header {
+	background-color: #272727;
+	pading: 2% 0% 0% 15%;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+}
+
+.header__menu__link {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #F6F6F6; /* 333 */
+	margin: 0 10px;
+	padding: 5px; 10px;
+	text-decoration: none;
+
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	gap: 8px;
+    align-items: center;
+}
+
+.header__menu__link:hover {
+	color: #F54927; /*007bff*/
+}
+
+.header__menu__link__img {
+	height: 48px;
+	width: 48px;
+}
+
 .presentation {
-	margin: 3% 5%;
+	margin: 2% 4%;
+	pading: 5% 15%;
     display: flex;
     align-items: center;
 	justify-content: space-between;
@@ -38,6 +76,7 @@ body {
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 }
+
 .presentation__content_paragraph__emphasis {
 	font-size: 28px;
 	font-weight: 800;
@@ -81,18 +120,42 @@ body {
 	padding: 4%;
 }
 
-/* Tests/dev purpose */
-a, strong {
-    color: #F54927; /* #F5B027 */
-}
-
-p {
-    margin: 5px;
-	padding: 5px;
-    /* border: 1px solid #89C4E1; */
-}
-
 .main-image {
 	height: 532px;
 	width: 468px;
 }
+
+.footer {
+	padding: 24px;
+	color: #000000;
+	background-color: #22D4FD;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.footer__link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.footer__link:hover {
+	/* background-color: #10C1FA; */
+	color: #F54927;
+	padding: 1%;
+	border: 2px dotted #FFFFFF;
+	border-radius: 8px; /* was 16 */
+	
+}
+
+/* Tests/dev purpose */
+strong {
+    color: #F54927; /* #F5B027 */
+}
+
+/* p { */
+/*     margin: 5px; */
+/* 	padding: 5px; */
+/*     /\* border: 1px solid #89C4E1; *\/ */
+/* } */
