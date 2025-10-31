@@ -23,7 +23,7 @@ body {
     background-color: var(--primary-color);	                                
     color: var(--secondary-color);
     font-family: "Open Sans", "Century Gothic", Tahoma, Serif;
-    font-size: 15px;
+    font-size: 1rem; /* was 15px */
 }
 
 .header {
@@ -40,7 +40,7 @@ body {
 
 .header__menu__link {
 	font-family: var(--secondary-font);
-	font-size: 24px;
+	font-size: 1.5rem; /* was 24px */
 	font-weight: 600;
 	color: var(--secondary-color);
 	margin: 0 10px;
@@ -69,28 +69,29 @@ body {
     display: flex;
     align-items: center;
 	justify-content: space-between;
+	gap: 82px;
 }
 
 .presentation__content {
-	width: 615px;
+	width: 50%; /* was 615px*/
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
 }
 
 .presentation__content__title {
-	font-size: 36px;
+	font-size: 2.25rem; /* was 36px */
 	font-family: var(--primary-font);
 	font-weight: bold;
 }
 
 .presentation__content__paragraph {
-	font-size: 24px;
+	font-size: 1.5rem; /* was 24px */
 	font-family: var(--secondary-font);
 }
 
 .presentation__content_paragraph__emphasis {
-	font-size: 28px;
+	font-size: 1.75rem; /* was 28px */
 	font-weight: 800;
 	color: var(--alternative-color);
 }
@@ -106,23 +107,23 @@ body {
 .presentation__links__subtitle {
 	font-family: var(--primary-font);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 1.5rem; /* was 24px */
 }
 
 .presentation__links__link {
 	display: flex;
 	justify-content: center;
 	gap: 16px;
-	width: 378px; /* was 280px */
+	border: 2px solid var(--tertiary-color);
+	width: 60%; /* was 280px then was 378px*/
 	text-align: center;
-	border-radius: 8px; /* was 16 */
-	font-size: 24px;
+	border-radius: 8px; /* was 16px */
+	font-size: 1.5rem;  /* was 24px */
 	font-weight: 600;
 	padding: 21.5px 0;
 	text-decoration: none;
 	color: var(--secondary-color);
 	font-family: var(--secondary-font);
-	border: 2px solid var(--tertiary-color);
 }
 
 .presentation__links__link:hover {
@@ -142,7 +143,7 @@ body {
 	background-color: var(--tertiary-color);
 	text-align: center;
 	font-family: var(--secondary-font);
-	font-size: 24px;
+	font-size: 2.0rem; /* was 24px */
 	font-weight: 400;
 }
 
@@ -162,4 +163,84 @@ body {
 
 strong {
     color: var(--alternative-color);
+}
+
+.wpp-logo {
+	width: 32px;
+	height: 32px;
+	/* width: 20%; */
+	/* height: 20%; */
+	margin: 0px;
+}
+
+@media(max-width: 768px) {
+	.header {
+		padding: 10%:
+	}
+
+	.header__menu {
+		justify-content: center;
+	}
+
+	.presentation {
+		flex-direction: column-reverse;
+	}
+
+	.presentation__content {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.presentation__links__link {
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		width: 150%;
+		text-align: center;
+		border-radius: 8px; /* was 16px */
+		font-size: 1.5rem;  /* was 24px */
+		font-weight: 600;
+		padding: 21.5px 0;
+		text-decoration: none;
+		color: var(--secondary-color);
+		font-family: var(--secondary-font);
+		border: 2px solid var(--tertiary-color);
+	}
+
+	.main-image {
+		width: 50%;
+		/* Custom */
+		height: 50%;
+	}
+}
+
+@media(max-width: 320px) {
+	.presentation__content__title {
+		font-size: 1.25rem; /* was 36px */
+		font-family: var(--primary-font);
+		font-weight: bold;		
+	}
+
+	.presentation__content__paragraph {
+		font-size: 1.0rem; /* was 24px */
+		font-family: var(--secondary-font);		
+	}
+	
+	.presentation__links__link {
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		width: 180%;
+		text-align: center;
+		border-radius: 8px; /* was 16px */
+		font-size: 1.5rem;  /* was 24px */
+		font-weight: 600;
+		padding: 21.5px 0;
+		text-decoration: none;
+		color: var(--secondary-color);
+		font-family: var(--secondary-font);
+		border: 2px solid var(--tertiary-color);
+	}
 }

@@ -7,3 +7,6 @@
 [submodule "course02"]
 	path = course02
 	url = git@github.com:alura-cursos/Portifolio-HTML-e-CSS-Curso2.git
+[submodule "course04"]
+	path = course04
+	url = git@github.com:alura-cursos/Portifolio-HTML-e-CSS-Curso4.git
