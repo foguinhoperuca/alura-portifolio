@@ -184,10 +184,12 @@ strong {
 
 	.presentation {
 		flex-direction: column-reverse;
+		padding: 5%;
 	}
 
 	.presentation__content {
-		width: 50%;
+		/* width: 50%; */
+		width: auto;
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
@@ -197,7 +199,8 @@ strong {
 		display: flex;
 		justify-content: center;
 		gap: 16px;
-		width: 150%;
+		/* width: 150%; */
+		width: 100%;
 		text-align: center;
 		border-radius: 8px; /* was 16px */
 		font-size: 1.5rem;  /* was 24px */
@@ -232,7 +235,8 @@ strong {
 		display: flex;
 		justify-content: center;
 		gap: 16px;
-		width: 180%;
+		/* width: 180%; */
+		width: 100%;
 		text-align: center;
 		border-radius: 8px; /* was 16px */
 		font-size: 1.5rem;  /* was 24px */
